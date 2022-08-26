@@ -1,0 +1,11 @@
+"""Printing OH by using '\n' and '\t' symbols"""
+print("#########\n"
+      "#\t\t#\n"
+      "#\t\t#\n"
+      "#\t\t#\n"
+      "#########\n\n"
+      "#\t\t#\n"
+      "#\t\t#\n"
+      "#########\n"
+      "#\t\t#\n"
+      "#\t\t#")
