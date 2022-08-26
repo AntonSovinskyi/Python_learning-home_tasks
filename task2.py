@@ -1,11 +1,18 @@
-"""Printing OH by using '\n' and '\t' symbols"""
-print("#########\n"
-      "#\t\t#\n"
-      "#\t\t#\n"
-      "#\t\t#\n"
-      "#########\n\n"
-      "#\t\t#\n"
-      "#\t\t#\n"
-      "#########\n"
-      "#\t\t#\n"
-      "#\t\t#")
+# Greeting
+print("Hello Beetroot!")
+
+# Fun greeting, using sep=
+print("H", "e" ,"l" ,"l" ,"o", "_" 
+      "B", "e", "e", "t", "r", "o", "o", "t" "!",
+      sep="_")
+
+# Fun greeting, using sep= with line break
+print("H", "e" ,"l" ,"l" ,"o", "\n" 
+      "B", "e", "e", "t", "r", "o", "o", "t" "!",
+      sep="_")
+
+# Simple messege with using end=
+print("Coding is fun", end="!!!\n\n")
+
+# Message with using commas
+print(1,4, 7, 14, 21)
