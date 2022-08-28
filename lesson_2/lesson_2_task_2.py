@@ -12,7 +12,7 @@ print("H", "e" ,"l" ,"l" ,"o", "\n"
       sep="_")
 
 # Simple messege with using end=
-print("Coding is fun", end="!!!\n\n")
+print("Coding is fun", end="!!!\n")
 
 # Message with using commas
 print(1,4, 7, 14, 21)
