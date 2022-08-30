@@ -1,4 +1,4 @@
-'''Cheking if the phone number is correct'''
+"""Cheking if the phone number is correct"""
 
 
 phone_number = input("Please, enter phone number: ")
