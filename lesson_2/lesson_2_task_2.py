@@ -6,7 +6,7 @@ print("Hello Beetroot!")
 
 # Fun greeting, using sep=
 print("H", "e", "l", "l", "o", "_"
-      "B", "e", "e", "t", "r", "o", "o", "t" "!",
+      "B", "e", "e", "t", "r", "o", "o", "t", "!",
       sep="_")
 
 # Fun greeting, using sep= with line break
