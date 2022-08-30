@@ -1,3 +1,6 @@
+"""Answer for a mathematical expression"""
+
+
 a, b, c = 2, 3, 2
 d = (a + b) ** c
 user = input('Enter the result of a mathematical expression: ')
