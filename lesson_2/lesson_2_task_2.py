@@ -1,3 +1,6 @@
+"""Using the built-in function 'print', sep=, end="""
+
+
 # Greeting
 print("Hello Beetroot!")
 
