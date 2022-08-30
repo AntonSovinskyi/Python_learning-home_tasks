@@ -1,4 +1,5 @@
-# Full name greeting
+"""Full name greeting"""
+
 
 first_name = "anton"
 last_name = "sovinskyi"
