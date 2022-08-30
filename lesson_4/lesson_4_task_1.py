@@ -1,3 +1,6 @@
+"""Make a string slice"""
+
+
 string_ = input("Please, enter a string: ")
 if len(string_) == 1:
     print('')
