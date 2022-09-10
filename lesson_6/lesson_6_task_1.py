@@ -13,6 +13,5 @@ n = 10
 while len(num) < n:
     num.append(random.randint(1, 1000))
 
-print(num)
 max_item = max(num)
 print(max_item)
