@@ -2,7 +2,7 @@
 searches and returns an element e from a stack. Any other element
 must remain on the stack respecting their order. Consider the case
 in which the element is not found - raise ValueError with proper
-info Message
+info Message.
 
 """
 
@@ -26,6 +26,15 @@ class Stack:
     def size(self):
         return len(self._items)
 
+    def __repr__(self):
+        representation = "<Stack>\n"
+        for ind, item in enumerate(reversed(self._items), 1):
+            representation += f"{ind}: {str(item)}\n"
+        return representation
+
+    def __str__(self):
+        return self.__repr__()
+
     def reverse(self):
         return self._items[::-1]
 
@@ -48,11 +57,12 @@ class Stack:
         return self._items
 
 
-s = Stack()
+if __name__ == "__main__":
+    s = Stack()
 
-s.push('one')
-s.push('two')
-s.push('three')
-s.push('four')
-s.push('five')
-print(s.get_from_stack('three'))
+    s.push('one')
+    s.push('two')
+    s.push('three')
+    s.push('four')
+    s.push('five')
+    print(s.get_from_stack('three'))
