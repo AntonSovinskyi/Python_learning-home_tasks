@@ -33,6 +33,9 @@ class Stack:
         pos_id = 1
         new_stack = []
 
+        if value not in self._items:
+            raise ValueError('This item is not in the list.')
+
         while self._items[-1] != value:
             new_stack.append(self._items.pop())
         else:
