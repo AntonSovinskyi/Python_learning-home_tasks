@@ -21,7 +21,6 @@ class Boss:
 
 class Worker:
     def __init__(self, id_: int, name: str, company: str, boss: Boss):
-        # super().__init__()
         self.id = id_
         self.name = name
         self.company = company
