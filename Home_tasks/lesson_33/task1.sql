@@ -9,12 +9,14 @@ import sqlite3 as sq
 with sq.connect("less33.db") as con:
     cur = con.cursor()
 
-    cur.execute("""CREATE TABLE IF NOT EXISTS les33 (
+    cur.execute("""CREATE TABLE IF NOT EXISTS les3 (
                 name TEXT,
                 old INTEGER,
                 score INTEGER DEFAULT 0,
                 games INTEGER
                 )""")
+-- rename table
+ALTER TABLE les3 RENAME TO les33
 
 -- adding a column
 ALTER TABLE les33 ADD sex TEXT
