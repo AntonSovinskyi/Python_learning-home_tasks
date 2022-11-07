@@ -17,13 +17,13 @@ with sq.connect("less33.db") as con:
                 )""")
 
 -- adding a column
-"ALTER TABLE les33 ADD sex TEXT"
+ALTER TABLE les33 ADD sex TEXT
 
 -- inserting a few rows
-"INSERT INTO les33 VALUES ('Anton', 37, 1000, 1), ('Lesya', 33, 2000, 2), ('Alex', 38, 1500, 2), ('Jane', 40, 3000, 3)"
+INSERT INTO les33 VALUES ('Anton', 37, 1000, 1), ('Lesya', 33, 2000, 2), ('Alex', 38, 1500, 2), ('Jane', 40, 3000, 3)
 
 -- UPDATE
-"UPDATE les33 SET score = 1500 WHERE rowid = 1"
+UPDATE les33 SET score = 1500 WHERE rowid = 1
 
 -- DELETE
-"DELETE FROM les33 WHERE rowid IN (1, 4)"
+DELETE FROM les33 WHERE rowid IN (1, 4)
