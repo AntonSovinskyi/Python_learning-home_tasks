@@ -13,3 +13,4 @@ with socket.socket(socket.AF_INET, socket.SOCK_DGRAM) as s:
         if message == 'exit':
             break
         s.sendto(message.encode('ascii'), (HOST, PORT))
+
