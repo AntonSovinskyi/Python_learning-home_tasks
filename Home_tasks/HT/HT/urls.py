@@ -16,8 +16,9 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path, include
 
-from notes.views import greeting
+from notes.views import greeting, test
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('notes/', include('notes.urls')),
+    path('test/', test)
 ]
