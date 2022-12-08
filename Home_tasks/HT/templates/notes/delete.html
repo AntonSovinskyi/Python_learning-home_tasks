@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Delete Notes</title>
+</head>
+<body>
+<h1>Delete note</h1>
+
+<form action="http://localhost:8000/notes/perform_dalete/{{ note.id }}" method="post">
+{% csrf_token %}
+Note title:<br>
+<input name="title" value="{{ note.title }}">
+<br><br>
+Note text:<br>
+<input name="text" value="{{ note.text }}">
+<br><br>
+<input type="submit" value="Submit">
+</form>
+</body>
+</html>

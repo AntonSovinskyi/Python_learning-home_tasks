@@ -15,10 +15,15 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
+from notes.views import *
 
-from notes.views import greeting, test
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('notes/', include('notes.urls')),
-    path('test/', test)
+    path('test/', test),
+    path('note/create/', create_note),
+    path('note/update/<int:id>', update_note),
+    path('note/perform_update/<int:id>', perform_update),
+    path('note/delete/<int:id>', delete_note),
+    path('note/perform_delete/<int:id>', perform_delete),
 ]
